@@ -107,11 +107,11 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
             }
 
             mMatrixPaints[6] = new Paint();
-            mMatrixPaints[6].setColor(Color.rgb(63, 255, 63));
+            mMatrixPaints[6].setColor(Color.rgb(255, 255, 102));
             mMatrixPaints[6].setTextSize(mCharWidth - 1);
             mMatrixPaints[6].setAntiAlias(false);
             mMatrixPaints[7] = new Paint();
-            mMatrixPaints[7].setColor(Color.rgb(191, 255, 191));
+            mMatrixPaints[7].setColor(Color.rgb(255, 255, 153));
             mMatrixPaints[7].setTextSize(mCharWidth - 1);
             mMatrixPaints[7].setAntiAlias(false);
 
