@@ -33,7 +33,7 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
     private class Engine extends CanvasWatchFaceService.Engine {
 
         private final int mSettingsNumRows = 23;
-        private int mMatrixBaseColor = Color.GREEN;
+        private int mMatrixBaseColor = Color.YELLOW;
 
         private Random random = new Random();
 
@@ -48,11 +48,11 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
         boolean mMute;
         Time mTime;
 
-        private final String[] matrixChars = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
-                "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4",
-                "5", "6", "7", "8", "9", "@", "$", "&", "%", "(", ")", "*", "%", "!", "#", "ア", "イ", "ウ", "エ",
-                "オ", "カ", "キ", "ク", "ケ", "コ", "サ", "シ", "ス", "セ", "ソ", "タ", "チ", "ツ", "テ", "ト",
-                "ナ", "ニ", "ヌ", "ネ", "ノ", "ハ", "ヒ", "フ", "ヘ", "ホ"};
+        private final String[] matrixChars = { "ᔦ", "ᔧ", "ᔨ", "ᔩ", "ᔪ", "ᔫ", "ᔬ", "ᔭ", "ᔮ", "ᔯ", "ᔰ", "ᔰ",
+                "ᔱ", "ᔲ", "ᔳ", "ᔴ", "ᔵ", "ᔶ", "ᔷ", "ᔸ", "ᔹ", "ᔺ", "ᔻ", "ᔼ", "ᔽ", "ᖧ", "ᖫ", "ᖬ", "ᖭ", "ᖧ", "ᖨ",
+                "ᖩ", "ᖪ", "ᖫ", "ᖬ", "ᖭ",  "ᔧ", "ᔨ", "ᔩ", "ᔪ", "ᔫ", "ᔬ", "ᖭ", "ᔽ", "ᖧ", "ᖫ", "ᔽ", "ᖧ", "ᖫ","ᔪ", 
+                "ᔫ", "ᔬ", "ᔭ", "ᔮ", "ᔽ", "ᖧ", "ᖫ", "ᔽ", "ᖧ", "ᖫ","ᔪ", "ᔫ", "ᔬ", "ᔭ", "ᔮ", "ᔽ", "ᖧ", "ᖫ",
+                "ᔴ", "ᔵ", "ᔶ", "ᔷ", "ᔸ", "ᔹ","ᔽ", "ᖧ", "ᖫ",};
 
         private String[][] mMatrixValues = new String[mSettingsNumRows][mSettingsNumRows];
         private int[][] mMatrixIntensities = new int[mSettingsNumRows][mSettingsNumRows];
