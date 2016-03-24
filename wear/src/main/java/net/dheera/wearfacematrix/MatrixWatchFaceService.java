@@ -121,14 +121,14 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
             mDigitalActiveTimePaint.setAntiAlias(true);
             // mDigitalActiveTimePaint.setStyle(Paint.Style.STROKE);
             // mDigitalActiveTimePaint.setTypeface(Typeface.createFromFile(new File(R.raw.orbitron_medium)));
-            mDigitalActiveTimePaint.setTypeface(Typeface.createFromAsset(resources.getAssets(), "miltown2.ttf"));
+            mDigitalActiveTimePaint.setTypeface(Typeface.createFromAsset(resources.getAssets(), "flashext.ttf"));
             mDigitalActiveTimePaint.setShadowLayer(20f, 0f, 0f, Color.GREEN);
 
             mDigitalAmbientTimePaint = new Paint();
             mDigitalAmbientTimePaint.setColor(Color.rgb(255, 255, 255));
             mDigitalAmbientTimePaint.setTextAlign(Paint.Align.CENTER);
             mDigitalAmbientTimePaint.setAntiAlias(true);
-            mDigitalAmbientTimePaint.setTypeface(Typeface.createFromAsset(resources.getAssets(), "miltown2.ttf"));
+            mDigitalAmbientTimePaint.setTypeface(Typeface.createFromAsset(resources.getAssets(), "flashext.ttf"));
 
             for(i = 0; i < mSettingsNumRows; i++) {
                 for (j = 0; j < mSettingsNumRows; j++) {
@@ -136,9 +136,10 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
                     mMatrixIntensities[i][j]=0;
                 }
             }
-
+            
+            //Background Vervelho
             mBackgroundPaint = new Paint();
-            mBackgroundPaint.setARGB(255, 0, 0, 0);
+            mBackgroundPaint.setARGB(255, 255, 0, 0);
 
             mAnalogHourPaint = new Paint();
             mAnalogHourPaint.setARGB(255, 200, 200, 200);
