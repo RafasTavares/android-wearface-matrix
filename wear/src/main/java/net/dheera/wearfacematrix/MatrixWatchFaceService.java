@@ -122,7 +122,7 @@ public class MatrixWatchFaceService extends CanvasWatchFaceService {
             // mDigitalActiveTimePaint.setStyle(Paint.Style.STROKE);
             // mDigitalActiveTimePaint.setTypeface(Typeface.createFromFile(new File(R.raw.orbitron_medium)));
             mDigitalActiveTimePaint.setTypeface(Typeface.createFromAsset(resources.getAssets(), "flashext.ttf"));
-            mDigitalActiveTimePaint.setShadowLayer(20f, 0f, 0f, Color.GREEN);
+            mDigitalActiveTimePaint.setShadowLayer(20f, 0f, 0f, Color.YELLOW);
 
             mDigitalAmbientTimePaint = new Paint();
             mDigitalAmbientTimePaint.setColor(Color.rgb(255, 255, 255));
